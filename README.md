@@ -7,7 +7,11 @@
 - React
 - Tailwind Css
 - DaisyUi
-
-* React Router
+- React Router
+- express
+- nodemailer
+- cors
 
 ## Host my portfolieo page to heroku
+
+- Includes server site
