@@ -1,11 +1,12 @@
 import React from "react";
 import Banner from "./Banner";
+import Projects from "./Projects";
 
 const Home = () => {
   return (
     <div>
-      <h2>This ios Home</h2>
       <Banner></Banner>
+      <Projects></Projects>
     </div>
   );
 };
