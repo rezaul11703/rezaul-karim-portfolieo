@@ -2,39 +2,28 @@ import React from "react";
 import projectOne from "../../Images/projectOne.PNG";
 import projectTwo from "../../Images/projectTwo.PNG";
 import projectThree from "../../Images/projectThree.PNG";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
     <div>
-      <h2 className="text-center text-2xl my-5 lg:my-10">
-        My Projects summary
+      <h2 className="text-center text-4xl  font-semibold my-5 lg:my-10">
+        Projects Overview
       </h2>
-      <div className="grid  grid-cols-1 lg:grid-cols-3">
+      <div className=" container mx-auto grid grid-cols-1 gap-4">
         <div>
-          <div class="card lg:card-side bg-base-100 shadow-xl">
-            <figure>
-              <img src={projectOne} alt="Album" />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">Project Name 1</h2>
-              <p>Computer Parts Corner</p>
-              <div class="card-actions justify-end">
-                <button class="btn btn-primary">See Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div class="card lg:card-side bg-base-100 shadow-xl">
+          <div class="card lg:card-side bg-base-100  shadow-xl">
+            <div class="grid grid-cols-2">
               <figure>
-                <img src={projectTwo} alt="Album" />
+                <img src={projectOne} alt="Album" />
               </figure>
               <div class="card-body">
-                <h2 class="card-title"> Project Name 2</h2>
-                <p>Smart Point</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">See Details</button>
+                <h2 class="text-center text-2xl">Computer Parts Corner</h2>
+                <span> A Manufacturer site </span>
+                <div class="card-actions justify-center">
+                  <button class="btn-sm rounded-box btn-primary">
+                    <Link to="/pOne">See Details </Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -43,14 +32,38 @@ const Projects = () => {
         <div>
           <div>
             <div class="card lg:card-side bg-base-100 shadow-xl">
-              <figure>
-                <img src={projectThree} alt="Album" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Project Name 3</h2>
-                <p>Simple Doctors Portal</p>
-                <div class="card-actions justify-end">
-                  <button class="btn btn-primary">See Details</button>
+              <div class="grid grid-cols-2">
+                <figure>
+                  <img src={projectTwo} alt="Album" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="text-center text-2xl"> Smart Store</h2>
+                  <span>A wirehouse Website</span>
+                  <div class="card-actions justify-center">
+                    <button class="btn-sm rounded-box btn-primary">
+                      <Link to="/pTwo">See Details </Link>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div class="card lg:card-side bg-base-100 shadow-xl">
+              <div class="grid grid-cols-2">
+                <figure>
+                  <img src={projectThree} alt="Album" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="text-center text-2xl">DMJH Health Care</h2>
+                  <span> A Single Doctor Service Page</span>
+                  <div class="card-actions justify-center">
+                    <button class="btn-sm rounded-box btn-primary">
+                      <Link to="/pThree">See Details </Link>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

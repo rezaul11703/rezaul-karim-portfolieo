@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -8,7 +7,20 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+
+    window.Email.send({
+      Host: "smtp.yourisp.com",
+      Username: "rezaulkarim11703@gmail.com",
+      Password: "yktelbnlcylvgszh",
+      To: "rezaulkarim11703@gmail.com",
+      From: "you@isp.com",
+      Subject: { email },
+      Body: {
+        name: e.name,
+        email: e.email,
+        message: e.message,
+      },
+    }).then((message) => alert(message));
     setName("");
     setEmail("");
     setMessage("");

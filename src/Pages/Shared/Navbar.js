@@ -29,9 +29,14 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects Overview</Link>
+            </li>
+            <li>
+              <Link to="/skills">My Skills</Link>
             </li>
           </ul>
         </div>
@@ -45,12 +50,25 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects Overview</Link>
+          </li>
+          <li>
+            <Link to="/skills">My Skills</Link>
           </li>
         </ul>
       </div>
       <div class="navbar-end">
-        <a class="btn">Get started</a>
+        <ul class="menu menu-horizontal p-0">
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+        </ul>
       </div>
     </div>
   );
