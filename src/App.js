@@ -9,6 +9,7 @@ import DetailsThree from "./Pages/Home/DetailsThree";
 import AboutMe from "./Pages/Home/AboutMe";
 import Footer from "./Pages/Shared/Footer";
 import Four from "./Pages/404/Four";
+import Blogs from "./Pages/Home/Blogs";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/pTwo" element={<DetailsTwo></DetailsTwo>}></Route>
         <Route path="/pThree" element={<DetailsThree></DetailsThree>}></Route>
         <Route path="/about" element={<AboutMe></AboutMe>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="*" element={<Four></Four>}></Route>
       </Routes>
       <Footer></Footer>
