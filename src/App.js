@@ -7,6 +7,8 @@ import DetailsOne from "./Pages/Home/DetailsOne";
 import DetailsTwo from "./Pages/Home/DetailsTwo";
 import DetailsThree from "./Pages/Home/DetailsThree";
 import AboutMe from "./Pages/Home/AboutMe";
+import Footer from "./Pages/Shared/Footer";
+import Four from "./Pages/404/Four";
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
         <Route path="/pTwo" element={<DetailsTwo></DetailsTwo>}></Route>
         <Route path="/pThree" element={<DetailsThree></DetailsThree>}></Route>
         <Route path="/about" element={<AboutMe></AboutMe>}></Route>
+        <Route path="*" element={<Four></Four>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

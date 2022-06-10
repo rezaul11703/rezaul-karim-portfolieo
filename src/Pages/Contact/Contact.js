@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -7,20 +8,21 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    window.Email.send({
-      Host: "smtp.yourisp.com",
-      Username: "rezaulkarim11703@gmail.com",
-      Password: "yktelbnlcylvgszh",
-      To: "rezaulkarim11703@gmail.com",
-      From: "you@isp.com",
-      Subject: { email },
-      Body: {
-        name: e.name,
-        email: e.email,
-        message: e.message,
-      },
-    }).then((message) => alert(message));
+    emailjs
+      .sendForm(
+        "service_3roxsrr",
+        "template_dslfsc1",
+        e.target,
+        "eu-zy7O8qalVs2SuX"
+      )
+      .then(
+        (result) => {
+          alert("Thanks for Contact");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setName("");
     setEmail("");
     setMessage("");
@@ -28,12 +30,7 @@ const Contact = () => {
 
   return (
     <div>
-      <form
-        className="form-control w-80 mx-auto"
-        action="https://formsubmit.co/el/lowuki"
-        method="POST"
-        onSubmit={handleSubmit}
-      >
+      <form className="form-control w-80 mx-auto" onSubmit={handleSubmit}>
         <input
           type="hidden"
           name="_next"
@@ -48,6 +45,7 @@ const Contact = () => {
           id="name"
           name="name"
           placeholder="Name..."
+          class="input input-bordered"
           onChange={(e) => setName(e.target.value)}
           required
         />
@@ -61,6 +59,7 @@ const Contact = () => {
           id="email"
           name="email"
           placeholder="Email..."
+          class="input input-bordered"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
@@ -75,16 +74,17 @@ const Contact = () => {
           value={message}
           name="message"
           placeholder="Your message..."
+          class="input input-bordered"
           onChange={(e) => setMessage(e.target.value)}
         />
 
         <button
-          class=" w-80  mx-auto btn btn-primary"
+          class=" w-80  mx-auto btn btn-primary mt-5 "
           type="submit"
           value="Submit"
         >
           {" "}
-          Send
+          Send Message
         </button>
       </form>
     </div>
