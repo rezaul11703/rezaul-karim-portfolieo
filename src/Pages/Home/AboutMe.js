@@ -25,21 +25,21 @@ const AboutMe = () => {
             <ul>
               <li className="flex justify-evenly">
                 <p> Html </p>
-                <progress class="progress my-auto w-56" value="485" max="100">
+                <progress class="progress my-auto w-56" value="85" max="100">
                   {" "}
                 </progress>
                 <span> 85%</span>
               </li>
               <li className="flex justify-evenly">
                 <p> CSS </p>
-                <progress class="progress my-auto w-56" value="40" max="100">
+                <progress class="progress my-auto w-56" value="85" max="100">
                   {" "}
                 </progress>
                 <span> 85%</span>
               </li>
               <li className="flex justify-evenly">
                 <p> JavaScript </p>
-                <progress class="progress my-auto w-56" value="75" max="100">
+                <progress class="progress my-auto w-56" value="85" max="100">
                   {" "}
                 </progress>
                 <span> 85%</span>
