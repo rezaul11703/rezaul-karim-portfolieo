@@ -11,36 +11,12 @@ const DetailsOne = () => {
           <div class=" w-full">
             <div id="slide1" class="carousel-item relative w-3/4 mx-auto py-2">
               <img src={project3} class="w-90" />
-              {/* <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide2" class="btn btn-circle">
-                  ❯
-                </a>
-              </div> */}
             </div>
             <div id="slide2" class="carousel-item relative w-3/4 mx-auto py-2">
               <img src={project2} class="w-90" />
-              {/* <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide3" class="btn btn-circle">
-                  ❯
-                </a>
-              </div> */}
             </div>
             <div id="slide3" class="carousel-item relative w-3/4 mx-auto py-2">
               <img src={project1} class="w-90" />
-              {/* <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle">
-                  ❮
-                </a>
-                <a href="#slide1" class="btn btn-circle">
-                  ❯
-                </a>
-              </div> */}
             </div>
           </div>
 
@@ -75,7 +51,6 @@ const DetailsOne = () => {
                 <li>React Bootstrap</li>
                 <li>Daisy UI</li>
                 <li>Firebase</li>
-                <li>React</li>
                 <li>Hook Form</li>
                 <li>React Query</li>
                 <li>React Toastify</li>

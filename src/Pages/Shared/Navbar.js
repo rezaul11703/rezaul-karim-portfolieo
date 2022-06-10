@@ -30,13 +30,17 @@ const Navbar = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="#about">About</a>
             </li>
             <li>
-              <Link to="/projects">Projects Overview</Link>
+              <a href="#project-overview">Projects Overview</a>
+            </li>
+
+            <li>
+              <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link to="/skills">My Skills</Link>
+              <Link to="/blogs">Blogs</Link>
             </li>
           </ul>
         </div>
@@ -50,17 +54,14 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <a href="#about">About</a>
           </li>
           <li>
-            <Link to="/projects">Projects Overview</Link>
-          </li>
-          <li>
-            <Link to="/skills">My Skills</Link>
+            <a href="#project-overview">Projects Overview</a>
           </li>
         </ul>
       </div>
-      <div class="navbar-end">
+      <div class="navbar-end hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
           <li>
             <Link to="/contact">Contact</Link>

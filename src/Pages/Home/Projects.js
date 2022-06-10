@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div>
+    <div id="project-overview">
       <h2 className="text-center text-4xl  font-semibold my-5 lg:my-10">
         Projects Overview
       </h2>
